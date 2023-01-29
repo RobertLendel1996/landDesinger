@@ -427,12 +427,7 @@ body::after {
 }
 
 .header._header-scroll .header__container {
-  min-height: 5rem;
-}
-
-.header._header-scroll .header__logo img {
-  width: 70%;
-  height: 70%;
+  min-height: 6.25rem;
 }
 
 .header__container {
@@ -5300,6 +5295,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border: 1px solid #2F2F2F;
   }
 
+  .header._header-scroll .header__container {
+    min-height: 5.3125rem;
+  }
+
   .header__container {
     min-height: 6.25rem;
   }
@@ -5380,20 +5379,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .whom__item {
     padding: 1.125rem 0.5625rem 0.75rem 0.5625rem;
-  }
-
-  .item-whom:nth-child(1),
-  .item-whom:nth-child(3) {
-    -webkit-transform: translate(-100%, 0px);
-        -ms-transform: translate(-100%, 0px);
-            transform: translate(-100%, 0px);
-  }
-
-  .item-whom:nth-child(2),
-  .item-whom:nth-child(4) {
-    -webkit-transform: translate(100%, 0px);
-        -ms-transform: translate(100%, 0px);
-            transform: translate(100%, 0px);
   }
 
   .what__container {
@@ -5498,6 +5483,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 29.99875em) {
+  .header._header-scroll .header__container {
+    min-height: 4.0625rem;
+  }
+
   .header__container {
     min-height: 5rem;
   }
@@ -5510,10 +5499,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(-100%, 3.125rem) scale(1);
         -ms-transform: translate(-100%, 3.125rem) scale(1);
             transform: translate(-100%, 3.125rem) scale(1);
-  }
-
-  .actions-header__item img {
-    max-width: 100%;
   }
 
   .actions-header__cart,
@@ -6793,7 +6778,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .header__logo img {
-    height: 5rem;
+    height: 4.375rem;
   }
 }
 
@@ -6810,15 +6795,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (height: clamp( 2.5rem , 0.7102908277rem  +  8.9485458613vw , 5rem )) {
+@supports (height: clamp( 2.5rem , 1.1577181208rem  +  6.711409396vw , 4.375rem )) {
     .header__logo img {
-      height: clamp( 2.5rem , 0.7102908277rem  +  8.9485458613vw , 5rem );
+      height: clamp( 2.5rem , 1.1577181208rem  +  6.711409396vw , 4.375rem );
     }
 }
 
-@supports not (height: clamp( 2.5rem , 0.7102908277rem  +  8.9485458613vw , 5rem )) {
+@supports not (height: clamp( 2.5rem , 1.1577181208rem  +  6.711409396vw , 4.375rem )) {
     .header__logo img {
-      height: calc(2.5rem + 2.5 * (100vw - 20rem) / 27.9375);
+      height: calc(2.5rem + 1.875 * (100vw - 20rem) / 27.9375);
     }
 }
 }
