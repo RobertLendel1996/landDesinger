@@ -1221,33 +1221,6 @@ body.touch .menu__item._active .menu__arrow {
   row-gap: 1.25rem;
 }
 
-.slide-courses__column {
-  -webkit-transition: all 2s ease 0s;
-  -o-transition: all 2s ease 0s;
-  transition: all 2s ease 0s;
-}
-
-.slide-courses__column:nth-child(1) {
-  -webkit-transform: translate(-100%, -20%);
-      -ms-transform: translate(-100%, -20%);
-          transform: translate(-100%, -20%);
-}
-
-.slide-courses__column:nth-child(2) {
-  -webkit-transform: translate(100%, 20%);
-      -ms-transform: translate(100%, 20%);
-          transform: translate(100%, 20%);
-  -webkit-transition: all 1.5s ease 0s;
-  -o-transition: all 1.5s ease 0s;
-  transition: all 1.5s ease 0s;
-}
-
-.slide-courses__column._active {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
 .item-slide-courses__content {
   position: relative;
 }
@@ -5108,7 +5081,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 100%;
     background-color: #fff;
     overflow: auto;
-    padding: 7.5rem 0.625rem 1.25rem 0.625rem;
+    padding: 7.5rem 0.625rem 3.75rem 0.625rem;
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
